@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80);
+    overflow-x: hidden;
+}
+
+
+
+.indexGridwrapper{
+    display: grid;
+    grid-template-areas: 
+    'hea nav'
+    'mai mai'
+    'foo foo'
+    ;
+    grid-template-columns: 15vw 85vw ;
+    grid-template-rows: 180px 1000px 180px;
+    column-gap: 5px;
+    
+}
+
+.logo{
+ grid-area: hea;
+ background-color:rgba(255, 255, 255, 0.822);
+ 
+ 
+}
+
+.navbar{
+    grid-area: nav;
+    background-color:rgba(255, 255, 255, 0.822);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    
+}
+
+.navLinks{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.navLinks li{
+    list-style: none;
+}
+
+.navLinks:hover{
+    background-color: rgba(255, 255, 255, 0.466);
+    transition: 0.8s background-color;
+
+}
+
+main{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    grid-area: mai;
+    background-color:rgba(255, 255, 255, 0.822);
+    
+    padding: 10%;
+}
+
+footer{
+    grid-area: foo;
+    background-color:rgba(255, 255, 255, 0.822);
+}
+
+/* CSS för "recensioner.html"  */
+
+.recensionerGridwrapper{
+    display: grid;
+    grid-template-areas: 
+    'hea nav'
+    'tbd tbd'
+    'foo foo'
+    ;
+    grid-template-columns: 15vw 85vw ;
+    grid-template-rows: 180px 1000px 180px;
+    column-gap: 5px;
+}
+
+/* CSS för "boklista.html"  */
+
+.boklistaGridwrapper{
+    display: grid;
+    grid-template-areas: 
+    'hea nav'
+    'tbd tbd'
+    'foo foo'
+    ;
+    grid-template-columns: 15vw 85vw ;
+    grid-template-rows: 180px 1000px 180px;
+    column-gap: 5px;
+}
+
+/* CSS för "roligFakta.html"  */
+
+.roligFaktaGridwrapper{
+    display: grid;
+    grid-template-areas: 
+    'hea nav'
+    'tbd tbd'
+    'foo foo'
+    ;
+    grid-template-columns: 15vw 85vw ;
+    grid-template-rows: 180px 1000px 180px;
+    column-gap: 5px;
+}
+
+/* CSS för "omMig.html"  */
+
+.omMigGridwrapper{
+    display: grid;
+    grid-template-areas: 
+    'hea nav'
+    'tbd tbd'
+    'foo foo'
+    ;
+    grid-template-columns: 15vw 85vw ;
+    grid-template-rows: 180px 1000px 180px;
+    column-gap: 5px;
+}
