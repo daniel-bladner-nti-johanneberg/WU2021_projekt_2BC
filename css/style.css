@@ -42,7 +42,7 @@ body{
     display: flex;
     justify-content: space-around;
     width: 10%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
@@ -81,13 +81,70 @@ footer{
     display: grid;
     grid-template-areas: 
     'hea nav'
-    'tbd tbd'
+    'ars ars'
     'foo foo'
     ;
     grid-template-columns: 15vw 85vw ;
     grid-template-rows: 180px 1000px 180px;
     column-gap: 5px;
 }
+
+.articleSection{
+    grid-area: ars;
+    display: grid;
+    grid-template-areas:
+    'ar1 ar2'
+    'ar3 ar4'
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px;
+    column-gap: 25px;
+    row-gap: 15px;
+    margin: 60px;
+}
+
+/* Bok1 Artikeln */
+
+#article1{
+    grid-area: ar1;
+    display: grid;
+    grid-template-areas:
+    'img1 txt1'
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    
+}
+
+#book1Img{
+    grid-area: img1;
+    width: 80%;
+    height: 400px;
+    margin-left: 16%;  
+}
+
+#book1Txt{
+    grid-area: txt1;
+    background-color:rgba(255, 255, 255, 0.822);
+    border-radius: 0 25px 25px 0;
+  
+}
+
+#article2{
+    grid-area: ar2;
+    background-color: green;
+}
+
+#article3{
+    grid-area: ar3;
+    background-color: yellow;
+}
+
+#article4{
+    grid-area: ar4;
+    background-color: blue
+}
+
 
 /* CSS för "boklista.html"  */
 
