@@ -4,8 +4,6 @@ body{
     overflow-x: hidden;
 }
 
-
-
 .indexGridwrapper{
     display: grid;
     grid-template-areas: 
@@ -20,8 +18,9 @@ body{
 }
 
 .logo{
- grid-area: hea;
- background-color:rgba(255, 255, 255, 0.822);
+    grid-area: hea;
+    background-color:rgba(255, 255, 255, 0.822);
+    height: 18vh;
  
  
 }
@@ -33,7 +32,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    height: 18vh;
     
 }
 
@@ -75,6 +74,20 @@ footer{
     background-color:rgba(255, 255, 255, 0.822);
 }
 
+.burgerMenu{
+    display: none;
+    cursor: pointer;
+}
+
+.burgerMenu div{
+    width: 35px;
+    height: 6px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
 /* CSS för "recensioner.html"  */
 
 .recensionerGridwrapper{
@@ -98,8 +111,7 @@ footer{
     ;
     grid-template-columns: 50% 50%;
     grid-template-rows: 400px 400px;
-    column-gap: 25px;
-    row-gap: 15px;
+    row-gap: 25px;
     margin: 60px;
 }
 
@@ -127,24 +139,81 @@ footer{
     grid-area: txt1;
     background-color:rgba(255, 255, 255, 0.822);
     border-radius: 0 25px 25px 0;
-  
+    margin-right: 16%;
+
 }
 
 #article2{
     grid-area: ar2;
-    background-color: green;
+    display: grid;
+    grid-template-areas:
+    'img2 txt2'
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+} 
+
+#book2Img{
+    grid-area: img2;
+    width: 80%;
+    height: 400px;
+    margin-left: 16%; 
+} 
+
+#book2Txt{
+    grid-area: txt2;
+    background-color:rgba(255, 255, 255, 0.822);
+    border-radius: 0 25px 25px 0;
+    margin-right: 16%;
 }
 
 #article3{
     grid-area: ar3;
-    background-color: yellow;
+    display: grid;
+    grid-template-areas:
+    'img3 txt3'
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+} 
+
+#book3Img{
+    grid-area: img3;
+    width: 80%;
+    height: 400px;
+    margin-left: 16%; 
+} 
+
+#book3Txt{
+    grid-area: txt3;
+    background-color:rgba(255, 255, 255, 0.822);
+    border-radius: 0 25px 25px 0;
+    margin-right: 16%;
 }
 
 #article4{
     grid-area: ar4;
-    background-color: blue
-}
+    display: grid;
+    grid-template-areas:
+    'img4 txt4'
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+} 
 
+#book4Img{
+    grid-area: img4;
+    width: 80%;
+    height: 400px;
+    margin-left: 16%; 
+} 
+
+#book4Txt{
+    grid-area: txt4;
+    background-color:rgba(255, 255, 255, 0.822);
+    border-radius: 0 25px 25px 0;
+    margin-right: 16%;
+}
 
 /* CSS för "boklista.html"  */
 
@@ -186,4 +255,35 @@ footer{
     grid-template-columns: 15vw 85vw ;
     grid-template-rows: 180px 1000px 180px;
     column-gap: 5px;
+}
+
+
+/* Javascript */
+
+@media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .navLinks {
+     position: absolute;
+     background-color:rgba(255, 255, 255, 0.822);
+     width: 40%;
+     right: 0px;
+     height: 82vh;
+     top: 18vh;
+     border-radius: 0px 0px 0px 0px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     transform: translateX(100%);
+     transition: transform 1s ease-in;
+ }
+    .burgerMenu{
+        display: block;
+    }
+}
+
+.navActive {
+    transform: translateX(0%);
 }
